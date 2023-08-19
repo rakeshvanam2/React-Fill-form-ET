@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Form, Input, Radio, Upload, Button, Checkbox } from "antd";
-import { UploadOutlined, InboxOutlined } from "@ant-design/icons";
+import { InboxOutlined } from "@ant-design/icons";
 import "./styles.css";
 const MyFormComponent = () => {
   const [form] = Form.useForm();
@@ -10,16 +10,6 @@ const MyFormComponent = () => {
 
   const handleCheckboxChange = (e) => {
     setIsChecked(e.target.checked);
-  };
-
-  const handleNext = () => {
-    form.validateFields().then(() => {
-      setCurrentStep(currentStep + 1);
-    });
-  };
-
-  const handleBack = () => {
-    setCurrentStep(currentStep - 1);
   };
 
   const onFinish = (values) => {
@@ -75,11 +65,7 @@ const MyFormComponent = () => {
               <Radio value="no">No</Radio>
             </Radio.Group>
 
-            <Form.Item
-              label="Upload file "
-              name="taxReturnFile"
-              rules={[{ required: true, message: "File upload is required" }]}
-            ></Form.Item>
+            <Form.Item label="Upload file " name="taxReturnFile"></Form.Item>
             <div>
               <div className="upload">
                 <Upload.Dragger>
@@ -100,11 +86,7 @@ const MyFormComponent = () => {
               <Radio value="no">No</Radio>
             </Radio.Group>
 
-            <Form.Item
-              label="Upload file "
-              name="s-corp"
-              rules={[{ required: true, message: "File upload is required" }]}
-            ></Form.Item>
+            <Form.Item label="Upload file " name="s-corp"></Form.Item>
             <div>
               <div className="upload">
                 <Upload.Dragger>
@@ -126,11 +108,7 @@ const MyFormComponent = () => {
               <Radio value="no">No</Radio>
             </Radio.Group>
 
-            <Form.Item
-              label="Upload file "
-              name="ownership"
-              rules={[{ required: true, message: "File upload is required" }]}
-            ></Form.Item>
+            <Form.Item label="Upload file " name="ownership"></Form.Item>
             <div>
               <div className="upload">
                 <Upload.Dragger>
@@ -157,11 +135,7 @@ const MyFormComponent = () => {
             ]}
           />
         </div>
-        <Form.Item
-          label="Upload file "
-          name="taxReturnFile"
-          rules={[{ required: true, message: "File upload is required" }]}
-        ></Form.Item>
+        <Form.Item label="Upload file " name="taxReturnFile"></Form.Item>
         <div>
           <div className="upload">
             <Upload.Dragger>
@@ -187,11 +161,7 @@ const MyFormComponent = () => {
           <Checkbox>Financials (if prepared)</Checkbox>
         </div>
         <div>
-          <Form.Item
-            label="Upload file "
-            name="taxReturnFile"
-            rules={[{ required: true, message: "File upload is required" }]}
-          >
+          <Form.Item label="Upload file " name="taxReturnFile">
             {" "}
           </Form.Item>
           <div className="upload">
@@ -238,9 +208,6 @@ const MyFormComponent = () => {
         <hr />
 
         <div>
-          <Button className="back-button" type="default" onClick={handleBack}>
-            Back
-          </Button>
           <Button className="save-button" type="primary" htmlType="save">
             Save
           </Button>
