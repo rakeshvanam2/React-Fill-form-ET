@@ -41,17 +41,17 @@ const MyFormComponent = () => {
           incorporatedIn2022: "no",
           ownershipChange: "no",
           transactions2022: [],
-          requiredDocuments: []
+          requiredDocuments: [],
         }}
       >
         {currentStep === 1 && (
           <div>
             <Form.Item
-              label="Email *"
+              label="Email"
               name="email"
               rules={[
                 { required: true, message: "Email is required" },
-                { type: "email", message: "Invalid email format" }
+                { type: "email", message: "Invalid email format" },
               ]}
             >
               <Input className="input-box-email" />
@@ -70,7 +70,7 @@ const MyFormComponent = () => {
               <div className="upload">
                 <Upload.Dragger>
                   <p className="ant-upload-drag-icon">
-                    <InboxOutlined />
+                    <InboxOutlined className="img" />
                   </p>
                   <p className="ant-upload-text">Browse Files</p>
                   <p className="ant-upload-hint">Drag and Drop Files Here</p>
@@ -91,7 +91,7 @@ const MyFormComponent = () => {
               <div className="upload">
                 <Upload.Dragger>
                   <p className="ant-upload-drag-icon">
-                    <InboxOutlined />
+                    <InboxOutlined className="img" />
                   </p>
                   <p className="ant-upload-text">Browse Files</p>
                   <p className="ant-upload-hint">Drag and Drop Files Here</p>
@@ -113,7 +113,7 @@ const MyFormComponent = () => {
               <div className="upload">
                 <Upload.Dragger>
                   <p className="ant-upload-drag-icon">
-                    <InboxOutlined />
+                    <InboxOutlined className="img" />
                   </p>
                   <p className="ant-upload-text">Browse Files</p>
                   <p className="ant-upload-hint">Drag and Drop Files Here</p>
@@ -131,7 +131,7 @@ const MyFormComponent = () => {
             options={[
               "Capital infusion",
               "Capital withdrawal",
-              "Related party transaction"
+              "Related party transaction",
             ]}
           />
         </div>
@@ -140,7 +140,7 @@ const MyFormComponent = () => {
           <div className="upload">
             <Upload.Dragger>
               <p className="ant-upload-drag-icon">
-                <InboxOutlined />
+                <InboxOutlined className="img" />
               </p>
               <p className="ant-upload-text">Browse Files</p>
               <p className="ant-upload-hint">Drag and Drop Files Here</p>
@@ -166,11 +166,15 @@ const MyFormComponent = () => {
           </Form.Item>
           <div className="upload">
             <Upload.Dragger>
-              <p className="ant-upload-drag-icon">
-                <InboxOutlined />
-              </p>
-              <p className="ant-upload-text">Browse Files</p>
-              <p className="ant-upload-hint">Drag and Drop Files Here</p>
+              <div>
+                <p className="ant-upload-drag-icon">
+                  <InboxOutlined className="img" />
+                </p>
+              </div>
+              <div className="browse-files">
+                <p className="ant-upload-text">Browse Files</p>
+                <p className="ant-upload-hint">Drag and Drop Files Here</p>
+              </div>
             </Upload.Dragger>
           </div>
         </div>
