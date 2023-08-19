@@ -1,0 +1,291 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.form-container {
+  width: 50%;
+  height: 10%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.log {
+  left: 0%;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.form-name {
+  font-weight: bold;
+  font-family: cursive;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.input-box-email {
+  width: 90%;
+  height: 40px;
+  box-sizing: auto;
+}
+.upload {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 10%;
+  width: 90%;
+}
+/* Custom styles for aligning step by step content */
+.step-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkbox-group {
+  text-align: left;
+  margin-left: 100px; /* Adjust the margin as needed */
+}
+
+/* Additional styles as needed */
+/* Custom styles for aligning image, company name, and prize */
+.company-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px; /* Adjust margin as needed */
+}
+
+.company-logo {
+  width: 100px; /* Adjust the image size as needed */
+  height: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+  display: flex;
+}
+
+.company-details {
+  text-align: right;
+  display: flex;
+  left: 0px;
+  margin-left: 10px;
+  font-family: monospace;
+  position: relative;
+}
+
+.prize {
+  font-weight: bold;
+}
+/* Style for the coupon-items container */
+.coupon-items {
+  width: 100px; /* Adjust the image size as needed */
+  height: auto;
+
+  display: flex;
+}
+
+/* Style for the input box */
+.input-box {
+  width: 200px;
+  height: auto;
+  margin-left: 0px;
+  margin-right: 60px;
+  padding-right: 10px;
+  display: flex;
+  position: absolute;
+}
+
+/* Style for the Apply button */
+.apply-button {
+  text-align: right;
+  display: flex;
+  position: absolute;
+  margin-left: 205px;
+  font-family: monospace;
+}
+
+/* Style for the price label and total value */
+.price {
+  margin-right: 15px;
+  font-weight: bold;
+  justify-content: right;
+  text-align: right;
+  position: relative;
+  margin-left: 600px;
+}
+
+/* Style for the total value */
+.total {
+  font-weight: normal;
+  margin-left: 0;
+  position: relative;
+}
+
+/* CSS */
+.back-button {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100px;
+  height: 40px;
+  right: 100px;
+}
+
+.back-button:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.back-button:hover {
+  background-color: #2c974b;
+}
+
+.back-button:focus {
+  box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
+  outline: none;
+}
+
+.back-button:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: default;
+}
+
+.back-button:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+}
+.save-button {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100px;
+  height: 40px;
+  left: 100px;
+}
+
+.save-button:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.save-button:hover {
+  background-color: #2c974b;
+}
+
+.save-button:focus {
+  box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
+  outline: none;
+}
+
+.save-button:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: default;
+}
+
+.save-button:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+}
+.submit-button {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100px;
+  height: 40px;
+  left: 110px;
+}
+
+.submit-button:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.submit-button:hover {
+  background-color: #2c974b;
+}
+
+.submit-button:focus {
+  box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
+  outline: none;
+}
+
+.submit-button:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: default;
+}
+
+.submit-button:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+}
